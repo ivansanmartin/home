@@ -3,6 +3,8 @@ body {
 }
 
 h1 {
+    padding-top: 100px;
+    text-align: center;
     border: 2px solid;
     border-radius: 15px 50px 30px;
 }
