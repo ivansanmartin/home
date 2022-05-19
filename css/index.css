@@ -61,11 +61,8 @@ footer {
 }
 
 
-@media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: none;
-        text-align: left;
-
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
     }
 }
