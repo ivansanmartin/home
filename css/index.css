@@ -66,14 +66,11 @@ footer {
         flex-direction: column;
     }
     a { 
-        background-color: #1F1F1F;
-        padding: 8px 18px;
         border-radius: 20px;
         font-size: 15px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: #EAEAEA;
-        transition: all 0.3s;
+    }
+    li {
+        display: inline-block;
+        align-items: center;
     }
 }
