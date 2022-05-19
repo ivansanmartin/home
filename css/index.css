@@ -59,3 +59,13 @@ footer {
     color: #fff;
     background-color: #484848;
 }
+
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: none;
+        text-align: left;
+
+    }
+}
