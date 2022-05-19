@@ -2,11 +2,3 @@ body {
     background-color: #575757; 
 }
 
-h1 {
-    width: 500px;
-    margin-top: 400px;
-    margin-left: 250px;
-    text-align: center;
-    border: 2px solid;
-    border-radius: 15px 50px 30px;
-}
