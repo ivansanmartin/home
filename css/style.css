@@ -155,6 +155,8 @@ body {
 
 .contenido .video iframe {
     display: block;
+    padding-top: 200x;
+    text-align: center;
 
 }
 
