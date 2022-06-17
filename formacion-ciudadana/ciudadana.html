@@ -10,14 +10,30 @@
     <style>
         body{
             -webkit-background-size: cover;
-            background: url(images/bg.jpg) no-repeat center center fixed; 
+            background: url(../images/Curso.jpg) no-repeat center center fixed; 
             -o-background-size: cover;
             -moz-background-size: cover;
             background-size: cover
         }
+        .contenido {
+            display: block;
+            padding-top: 300px;
+            text-align: center;
+        }
+        @media screen and (max-width: 650px){
+            .contenido {
+                display: block;
+                padding-top: 200px;
+                width: 50%;
+            }
+           
+
+        }
         
     </style>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Vb4KIhV5v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+
+    <div class="contenido">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9Vb4KIhV5v4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
