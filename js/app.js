@@ -6,6 +6,7 @@ var btnMenuOpen = document.getElementById('btnMenuOpen'),
     enlaces = document.getElementById('enlaces');
 
 
+
     // Clic abrir
     btnMenuOpen.addEventListener('click', () => {
 
@@ -29,3 +30,7 @@ var btnMenuOpen = document.getElementById('btnMenuOpen'),
         menuResponsive.classList.remove('active');
 
     });
+
+    enlaces.addEventListener('click', () => {
+        menuResponsive.onclick("openInNewTab")
+    }) 
