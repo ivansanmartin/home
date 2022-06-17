@@ -155,7 +155,7 @@ body {
 
 .contenido .video {
     display: block;
-    padding-top: 50%;
+    padding-top: 1000px;
     text-align: center;
 
 }
@@ -214,6 +214,7 @@ body {
     }
     .contenido .video {
         padding-top: 200px;
+        width: 50%;
     }
 
 }
