@@ -125,10 +125,14 @@
             font-family: 'Raleway', sans-serif;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 550px) {
             .contenedor h1 {
                 font-size: 30px;
             }
+            .header {
+                font-size: 30px;
+            }
+
 
             .contenedor p {
                 width: 60%;
@@ -142,6 +146,11 @@
 
             .contenedor
             .panel {
+                width: 70%;
+            }
+
+            .contenedor
+            .basic-table {
                 width: 70%;
             }
 
@@ -378,36 +387,40 @@
             modificando colores.
         </p>
 
-        <pre>
-            <code>
-    &lt;table border=&quot;fill&quot;&gt;
+        <div class="basic-table">
+            <pre>
+                <code>
+        &lt;table border=&quot;fill&quot;&gt;
+    
+            &lt;!-- La siguiente fila es para declarar mis encabezados:  --&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Apellido&lt;/th&gt;
+                &lt;th&gt;Correo&lt;/th&gt;
+                &lt;th&gt;Direcci&oacute;n&lt;/th&gt;
+            &lt;/tr&gt;
+    
+            &lt;!-- Esta fila es para insertar columnas normales --&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Iv&aacute;n&lt;/td&gt;
+                &lt;td&gt;San Mart&iacute;n&lt;/td&gt;
+                &lt;td&gt;ivan.sanmartin@inacapmail.cl&lt;/td&gt;
+                &lt;td&gt;Los Perales 123&lt;/td&gt;
+            &lt;/tr&gt;
+    
+            &lt;!-- Otra fila con columnas normales. Esto se puede repetir innumerables veces --&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Juan&lt;/td&gt;
+                &lt;td&gt;Alcachofa&lt;/td&gt;
+                &lt;td&gt;juan.alcachofa@inacapmail.cl&lt;/td&gt;
+                &lt;td&gt;El Maiten 234&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+                </code>
+            </pre>
 
-        &lt;!-- La siguiente fila es para declarar mis encabezados:  --&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Nombre&lt;/th&gt;
-            &lt;th&gt;Apellido&lt;/th&gt;
-            &lt;th&gt;Correo&lt;/th&gt;
-            &lt;th&gt;Direcci&oacute;n&lt;/th&gt;
-        &lt;/tr&gt;
-
-        &lt;!-- Esta fila es para insertar columnas normales --&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Iv&aacute;n&lt;/td&gt;
-            &lt;td&gt;San Mart&iacute;n&lt;/td&gt;
-            &lt;td&gt;ivan.sanmartin@inacapmail.cl&lt;/td&gt;
-            &lt;td&gt;Los Perales 123&lt;/td&gt;
-        &lt;/tr&gt;
-
-        &lt;!-- Otra fila con columnas normales. Esto se puede repetir innumerables veces --&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Juan&lt;/td&gt;
-            &lt;td&gt;Alcachofa&lt;/td&gt;
-            &lt;td&gt;juan.alcachofa@inacapmail.cl&lt;/td&gt;
-            &lt;td&gt;El Maiten 234&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/table&gt;
-            </code>
-        </pre>
+        </div>
+        
 
         
 
