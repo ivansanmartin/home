@@ -61,6 +61,10 @@
             width: 30%;
         }
 
+        .contenedor li {
+            width: 50%;
+        }
+
         p {
             font-family: 'Raleway', sans-serif;
             color: #42a102;
@@ -93,9 +97,12 @@
             display: flex;
             justify-content: flex-start;
             padding-left: 20%;
-            flex-direction: column;
-               
+            flex-direction: column;         
             
+        }
+
+        .enlaces ul {
+            padding: 0;
         }
 
         .enlaces li {
@@ -127,10 +134,11 @@
 
         @media screen and (max-width: 800px) {
             .contenedor h1 {
-                font-size: 30px;
+                font-size: 24px;
+
             }
             .header {
-                font-size: 30px;
+                font-size: 25px;
             }
 
 
@@ -156,10 +164,28 @@
 
             .contenedor
             .table-img {
-                width: 400px;
+                width: 300px;
             }
 
+            .contenedor
+            .login-img {
+                width: 300px;
+            }
 
+            .contenedor
+            .panel-img {
+                width: 300px;
+                height: 100px;
+            }
+
+            .contenedor li {
+                font-size: 16px;
+                width: 60%;
+            }
+
+            .enlaces h2 {
+                font-size: 20px;
+            }
             
         }
 
@@ -210,13 +236,14 @@
 
         
         <h1>Etiquetas de HTML5</h1>
-        <iframe src="documents/HTML Cheat Sheet (1).pdf" frameborder="0" width="50%" height="500px"></iframe>
+        <embed class="labels-html" src="documents/HTML Cheat Sheet (1).pdf" type="" width="50%" height="500px">
+
 
         <h1 id="basic-page">Página básica hecha en HTML (Log in)</h1>
         <h2>Log in: </h2>
-        <img src="images/loginhtml.png" alt="" width="40%">
+        <img class="login-img" src="images/loginhtml.png" alt="" width="40%">
         <h2>Panel basico de ejemplo: </h2>
-        <img src="images/panelhtml.png" alt="" width="40%">
+        <img class="panel-img" src="images/panelhtml.png" alt="" width="40%">
 
         <div class="login">
             <h1>Código HTML (index.html):</h1>
