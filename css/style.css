@@ -172,7 +172,7 @@ body {
     display: flex;
     width: 70%;
     height: 250px;
-    font-size: 100%;
+    font-size: 115%;
     justify-content: space-between;
 
 
@@ -205,10 +205,11 @@ div:hover {
 
 .projects button {
     background: #1c484c;
-    width: 50%;
-    height: 10%;
+    width: 60%;
+    height: 15%;
     border: none;
     cursor: pointer;
+    font-size: 100%;
     border-radius: 20px;
     color: var(--color-texto);
     transition: all 1s;
@@ -224,7 +225,6 @@ div:hover {
 .projects img:hover {
     width: 85%;
     height: 120px;
-    border-radius: 50%;
 
 
 }
