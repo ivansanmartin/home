@@ -163,6 +163,12 @@
             }
 
             .contenedor
+            .advanced-table {
+                width: 70%;
+                
+            }
+
+            .contenedor
             .table-img {
                 width: 300px;
             }
@@ -448,6 +454,74 @@
                 &lt;td&gt;El Maiten 234&lt;/td&gt;
             &lt;/tr&gt;
         &lt;/table&gt;
+                </code>
+            </pre>
+
+        </div>
+
+        <h1>MISMA TABLA (MÁS AVANZADA)</h1>
+
+        <p>La siguiente tabla contiene los mismo datos que la anterior, la única diferencia es que
+            utilizamos etiquetas de agrupación de contenido.
+        </p>
+
+        <li>&ltthead&gt - Sirve par agrupar el contenido, normalmente se utiliza en el encabezado.</li>
+        <li>&lttbody&gt - Sirve par agrupar el contenido, utilizada normalmente en el cuerpo de la tabla, donde
+            estan situadas las filas de datos normales.</li>
+        <li>&lttfooter&gt - Al igual que las anteriores se utiliza para agrupar el contenido, en este caso para definir el la sección del pie de página de la tabla.</li>
+        
+
+        <p>Estás etiquetas mejoran la accesibilidad del motor de busqueda de la web, además de poder dividir la tabla en secciones lógicas y 
+            de diferenciar los datos en el cuerpo de la tabla</p>
+        <div class="advanced-table">
+            <pre>
+                <code>
+      &lt;table border=&quot;fill&quot;&gt;
+    
+      &lt;!-- La siguiente fila es para declarar mis encabezados:  --&gt;
+
+      &lt;thead&gt; &lt;!-- Agrupa el contenido del cuerpo en la tabla --&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Nombre&lt;/th&gt;
+          &lt;th&gt;Apellido&lt;/th&gt;
+          &lt;th&gt;Correo&lt;/th&gt;
+          &lt;th&gt;Direcci&oacute;n&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      
+
+      &lt;!-- Esta fila es para insertar columnas normales --&gt;
+      
+      &lt;tbody&gt; &lt;!-- Agrupa el contenido del cuerpo en la tabla --&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Iv&aacute;n&lt;/td&gt;
+          &lt;td&gt;San Mart&iacute;n&lt;/td&gt;
+          &lt;td&gt;ivan.sanmartin@inacapmail.cl&lt;/td&gt;
+          &lt;td&gt;Los Perales 123&lt;/td&gt;
+        &lt;/tr&gt;
+
+      &lt;!-- Otra fila con columnas normales. Esto se puede repetir innumerables veces --&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Juan&lt;/td&gt;
+          &lt;td&gt;Alcachofa&lt;/td&gt;
+          &lt;td&gt;juan.alcachofa@inacapmail.cl&lt;/td&gt;
+          &lt;td&gt;El Maiten 234&lt;/td&gt;
+        &lt;/tr&gt;
+
+      &lt;/tbody&gt;
+
+      &lt;tfoot&gt; &lt;!-- Agrupa el contenido del cuerpo en la tabla --&gt;
+        &lt;tr&gt;
+          &lt;th&gt;FOOTER&lt;/th&gt;
+          &lt;th&gt;FOOTER&lt;/th&gt;
+          &lt;th&gt;FOOTER&lt;/th&gt;
+          &lt;th&gt;FOOTER&lt;/th&gt;
+        &lt;/tr&gt;
+        
+      &lt;/tfoot&gt;
+      
+  &lt;/table&gt;
+
                 </code>
             </pre>
 
