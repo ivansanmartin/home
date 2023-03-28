@@ -350,6 +350,16 @@ footer {
 
 }
 
+@media screen and (min-width: 1500px){
+
+    .projects img {
+        width: 50%;
+        
+    }
+
+}
+
+
 
 
 
