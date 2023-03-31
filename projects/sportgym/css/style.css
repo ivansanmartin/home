@@ -31,7 +31,7 @@ body {
 .container  {
     display: flex;
     width: 30%;
-    height: 50%;
+    height: 40%;
     background: #812020;
     border-radius: 20px;
     align-items: center;
