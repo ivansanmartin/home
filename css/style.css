@@ -148,6 +148,11 @@ footer {
     background: #806d6d;
 }
 
+.projects button a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
 .github {
     display: flex;
     flex-direction: column;
