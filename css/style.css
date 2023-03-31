@@ -47,6 +47,7 @@ header h1 {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
    
 }
 
@@ -80,7 +81,7 @@ footer {
     font-size: 100%;
     bottom: 0;
     left: 0;
-    height: 15%;
+    height: 20%;
     width: 100%;
     color: var(--color-texto);
 
@@ -173,12 +174,6 @@ footer {
 
 
 
-
-
-
-
-
-
 footer a {
     margin: 20px;
     color: #fff;
@@ -189,7 +184,7 @@ footer a:hover {
     color: #f6cdcd;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
     .title {
         font-size: 12px;
     }
@@ -206,6 +201,7 @@ footer a:hover {
  
     
 }
+
 
 
 
