@@ -19,7 +19,7 @@
 }
 
 body { 
-   background: var(--color-background)  
+   background: var(--color-background);
 }
 
 header {
@@ -46,6 +46,7 @@ header h1 {
     height: 200px;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
    
 }
 
@@ -58,13 +59,13 @@ header h1 {
 
 .information {
     width: 50%;
-    height: 100%;
+    height: 100px;
     padding-top: 10px;
+
 
     
 
 }
-
 
 
 
@@ -85,6 +86,99 @@ footer {
 
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 1s;
+
+}
+
+.projects {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    background: #362c2c;
+    display: block;
+    text-align: center;
+    color: var(--color-texto);
+    transition: all 1s;
+
+    
+}
+
+.projects:hover {
+    transform: rotateZ(2deg);
+}
+
+.projects div {
+    margin-bottom: 10px;
+}
+
+.projects img {
+    width: 100%;
+    height: 100px;
+}
+
+.projects button {
+    width: 100px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #593535;
+    color: var(--color-texto);
+    transition: all 1s;
+}
+
+.projects button:hover {
+    color: black;
+    background: #806d6d;
+}
+
+.github {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.github div {
+    margin: 20px;
+}
+
+.github img {
+    width: 200px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.github img:hover {
+    transform: rotateZ(360deg);
+}
+
+
+
+
+
+
+
+
+
+
 footer a {
     margin: 20px;
     color: #fff;
@@ -103,6 +197,13 @@ footer a:hover {
     header h1 {
         font-size: 20px;
     }
+
+    .information {
+        font-size: 12px;
+    }
+
+
+ 
     
 }
 
