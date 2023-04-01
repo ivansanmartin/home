@@ -31,7 +31,7 @@ body {
 .container  {
     display: flex;
     width: 30%;
-    height: 40%;
+    height: 35%;
     background: #812020;
     border-radius: 20px;
     align-items: center;
@@ -40,10 +40,13 @@ body {
 }
 
 .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 70%;
     height: 70%;
-    margin: 20px;
     text-align: center;
+    align-items: center;
     
     
 }
@@ -53,34 +56,35 @@ body {
     margin-right: 10px;
 }
 
+
 .inputs input {
     border: none;
     border-radius: 10px;
     height: 30px;
     width: 60%;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
-.log-in button {
+.inputs button {
     border: 2px solid white;
     color: white;
-    width: 140px;
-    height: 35px;
+    width: 60%;
+    height: 20%;
     cursor: pointer;
     background: #812020;
     border-radius: 10px;
     transition: all 1s;
+
 }
 
-.log-in button:hover {
+.inputs button:hover {
     background: #888ec3;
 
 }
 
 .inputs div {
     width: 100%;
-    margin-top: 50px;
 }
 
 
@@ -93,10 +97,10 @@ body {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .container {
         width: 70%;
-        height: 40%;        
+        height: 25%;        
     }
 
     .inputs label {
