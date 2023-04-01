@@ -110,8 +110,6 @@ footer {
     display: block;
     text-align: center;
     color: var(--color-texto);
-    transition: all 1s;
-    position: relative;
 
     
 }
@@ -138,6 +136,7 @@ footer {
     background: #593535;
     color: var(--color-texto);
     transition: all 1s;
+    position: relative;
 }
 
 .projects button:hover {
