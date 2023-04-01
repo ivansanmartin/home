@@ -111,6 +111,7 @@ footer {
     text-align: center;
     color: var(--color-texto);
     transition: all 1s;
+    position: relative;
 
     
 }
