@@ -129,8 +129,8 @@ footer {
 }
 
 .projects button {
-    width: 100px;
-    height: 20px;
+    width: 35%;
+    height: 1.5em;
     border: none;
     border-radius: 10px;
     cursor: pointer;
