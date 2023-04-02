@@ -119,7 +119,9 @@ footer {
 }
 
 .projects div {
+    display: flex;
     padding-top: 5px;
+    justify-content: center;
 }
 
 .projects img {
@@ -127,7 +129,8 @@ footer {
     height: 6em;
 }
 
-.projects button {
+.projects 
+.redirect {
     width: 35%;
     height: 1.5em;
     border: none;
@@ -139,12 +142,12 @@ footer {
     position: relative;
 }
 
-.projects button:hover {
+.projects .redirect:hover {
     color: black;
     background: #806d6d;
 }
 
-.projects button a {
+.projects a {
     text-decoration: none;
     color: var(--color-texto);
 }
