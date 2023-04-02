@@ -94,7 +94,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 1s;
+
 
 }
 
@@ -110,6 +110,7 @@ footer {
     padding: 10px;
     text-align: center;
     color: var(--color-texto);
+    transition: all 1s;
 
 }
 
