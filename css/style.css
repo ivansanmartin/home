@@ -77,11 +77,74 @@ footer {
     font-size: 100%;
     bottom: 0;
     left: 0;
-    height: 240px;
+    height: 700px;
     width: 100%;
     color: var(--color-texto);
 
 }
+
+footer
+.derechos {
+    height: 100px;
+    padding-top: 50px;
+}
+
+footer
+.footer-title{
+    padding-bottom: 30px;
+}
+
+.contact-container {
+    width: 100%;
+    height: 90%;
+    padding-top: 20px;
+
+}
+
+.contact-title {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    
+}
+
+.contact input {
+    border-style: none;
+    outline: none;
+    border-radius: 30px;
+    height: 30px;
+    width: 15%;
+    font-family: var(--text-default);
+    padding-left: 10px;
+
+}
+
+.contact textarea {
+    border-style: none;
+    outline: none;
+    border-radius: 30px;
+    resize: none;
+    padding: 20px;
+    font-family: var(--text-default);
+
+}
+
+.contact button {
+    border-style: none;
+    border-radius: 40px;
+    font-family: var(--text-default);
+    cursor: pointer;
+}
+
 
 .container {
     display: flex;
@@ -269,6 +332,10 @@ footer a:hover {
 
     .projects .redirect {
         overflow: hidden;
+    }
+
+    .contact input {
+        width: 50%;
     }
     
 }
