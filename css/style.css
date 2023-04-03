@@ -43,7 +43,7 @@ header h1 {
 .content1 {
     font: var(--text-default);
     display: flex;
-    height: 200px;
+    height: 100%px;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -54,13 +54,14 @@ header h1 {
 .title {
     display: flex;
     width: 50%;
+    margin-right: 5px;
     text-align: center;
     padding-top: 50px;
 }
 
 .information {
     width: 50%;
-    height: 100px;
+    height: 100%;
     padding-top: 10px;
 }
 
@@ -80,12 +81,12 @@ header h1 {
 }
 
 .projects {
-    margin: 50px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     width: 250px;
-    height: 310px;
+    height: 90%;
     background: #362c2c;
     display: block;
     padding: 10px;
