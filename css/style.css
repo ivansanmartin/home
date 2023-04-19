@@ -97,7 +97,8 @@ header h1 {
 }
 
 .projects:hover {
-    transform: rotateZ(2deg);
+    transform: scale(1.04);
+    background-color: #362c2cf3;
 }
 
 .projects div {
