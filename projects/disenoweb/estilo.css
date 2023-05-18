@@ -233,6 +233,12 @@ footer a:hover {
         
     }
 
+    nav {
+        height: 250px;
+        justify-content: center;
+
+    }
+
     nav ul {
         flex-direction: column;
 
