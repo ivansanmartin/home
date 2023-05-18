@@ -226,7 +226,7 @@ footer a:hover {
     color: #271b20; /* establece el color del texto cuando se pasa el cursor por encima */
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 740px) {
   
     #secA {
         height: 300px;
