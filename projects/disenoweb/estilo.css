@@ -155,9 +155,6 @@ main {
 /* Estilo de los párrafos dentro de la sección A */
 /* Estilo de la sección principal */
 main section {
-    background-image:
-    linear-gradient(90deg, transparent 10px, #abced4 10px, #abced4 12px, transparent 12px), /* establece el primer gradiente lineal para crear rayas verticales */
-    linear-gradient(#eee .1em, transparent .1em); /* establece el segundo gradiente lineal para crear una sutil textura de rayas horizontales */
     background-size: 100% 1.2em; /* establece el tamaño de la imagen de fondo */
     flex-basis: 30%; /* establece el tamaño inicial de la sección en un diseño flexible */
     margin-bottom: 20px; /* establece un margen inferior de 20px */
@@ -172,7 +169,7 @@ main section h2 {
 
 /* Estilo de los títulos H2 en general */
 h2 {
-    color: #596595; /* establece el color del texto */
+    color: #ffffff; /* establece el color del texto */
 }
 
 /* Estilo del texto de la sección principal */
@@ -185,17 +182,38 @@ main section p {
 }
 
 /* Estilo de la sección C */
-#secC {
-    background-color: #fff; /* establece el color de fondo */
-    background-image:
-    linear-gradient(90deg, transparent 10px, #abced4 10px, #abced4 12px, transparent 12px),
-    linear-gradient(#eee .1em, transparent .1em); /* establece el gradiente de fondo */
-    background-size: 100% 1.2em; /* establece el tamaño de la imagen de fondo */
+.secC {
+    display: flex;
+    background-color: #ffffff; /* establece el color de fondo */
     flex-basis: 100%; /* establece el tamaño de la sección al 100% */
     margin-bottom: 20px; /* establece un margen inferior de 20px */
     padding: 20px; /* establece un padding de 20px */
-    border-radius: 0px 10px 10px 0px; /* establece la curvatura de la esquina */
+    border-radius: 10px 10px 10px 10px; /* establece la curvatura de la esquina */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.secC
+.card  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.secC
+.card
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.secC
+.card
+h1 {
+    font-size: 30px;
+}
+
 
 /* Estilo de las listas ordenadas en las secciones */
 section ol {
@@ -212,6 +230,7 @@ footer {
     padding: 15px; /* establece el espacio interno alrededor del contenido */
     font-size: 0.7em; /* establece el tamaño de la fuente */
     text-align: center; /* establece la alineación del texto en el centro */
+    height: 100%;
 }
 
 /* Estilo de los enlaces del pie de página */
@@ -225,6 +244,56 @@ footer a {
 footer a:hover {
     color: #271b20; /* establece el color del texto cuando se pasa el cursor por encima */
 }
+
+footer p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+footer .footer-etc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+}
+
+
+footer .footer-etc .terms-help {
+    display: flex;
+    gap: 300px;
+}
+
+footer .info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+}
+
+footer .info img {
+    margin-top: 30px;
+
+}
+
+footer .info div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+footer .info div p {
+    margin-left: 30px;
+}
+
+.terminos-condiciones h2 {
+    cursor: pointer;
+}
+
+.ayuda h2 {
+    cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 740px) {
   
@@ -264,5 +333,22 @@ footer a:hover {
         font-size: 10px;
     
     }
+
+    footer .footer-etc {
+        justify-content: center;
+    }
+
+
+    footer .footer-etc .terms-help {
+        padding-top: 50px;
+        flex-wrap: wrap;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    footer .footer-etc .info {
+        justify-content: center;
+    }
+    
 
 }
