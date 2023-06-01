@@ -40,122 +40,14 @@ header h1 {
     cursor: pointer;
 }
 
-.content1 {
-    font: var(--text-default);
+.principal {
     display: flex;
-    height: 100%px;
     flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-   
 }
 
-.title {
-    display: flex;
-    width: 100%;
-    margin-right: 5px;
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.information {
-    width: 50%;
-    height: 100%;
-    padding-top: 10px;
-}
-
-.container {
-    display: flex;
-    overflow: auto;
-
-    
-}
-
-.cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-.projects {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    width: 250px;
-    height: 90%;
-    background: #362c2c;
-    display: block;
-    padding: 10px;
+.principal h1 {
     text-align: center;
-    color: var(--color-texto);
-    transition: all 1s;
-
-}
-
-.projects:hover {
-    transform: scale(1.04);
-    background-color: #362c2cf3;
-}
-
-.projects div {
-    display: flex;
-    padding-top: 5px;
-    justify-content: center;
-}
-
-.projects img {
-    width: 100%;
-    height: 6em;
-}
-
-.projects 
-.redirect {
-    width: 35%;
-    height: 1.5em;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    background: #593535;
-    color: var(--color-texto);
-    transition: all 1s;
-    position: relative;
-}
-
-.projects .redirect:hover {
-    color: black;
-    background: #806d6d;
-}
-
-.projects a {
-    text-decoration: none;
-    color: var(--color-texto);
-}
-
-.github {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    align-items: center;
-    margin: 20px;
-
-}
-
-.github div {
-    margin: 20px;
-}
-
-.github img {
-    width: 200px;
-    cursor: pointer;
-    transition: all 1s;
-}
-
-.github img:hover {
-    transform: rotateZ(360deg);
+    color: red;
 }
 
 .community {
@@ -175,6 +67,7 @@ header h1 {
 
 .community-info p {
     padding-bottom: 20px;
+    text-align: center;
 
 }
 
@@ -211,16 +104,13 @@ header h1 {
 
 footer {
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     background: #594242;
     text-align: center;
     font-size: 100%;
-    bottom: 0;
-    left: 0;
-    height: 750px;
+    height: 200px;
     width: 100%;
     color: var(--color-texto);
 
@@ -238,76 +128,6 @@ footer
     margin-top: 30px;
 }
 
-
-
-
-.contact-container {
-    width: 100%;
-    height: 100%;
-    padding-top: 20px;
-
-}
-
-.contact-title {
-    display: flex;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    
-}
-
-.contact input {
-    border-style: none;
-    outline: none;
-    border-radius: 30px;
-    height: 30px;
-    width: 18%;
-    font-family: var(--text-default);
-    padding-left: 10px;
-
-}
-
-.contact textarea {
-    border-style: none;
-    outline: none;
-    border-radius: 30px;
-    resize: none;
-    padding: 20px;
-    width: 25%;
-    height: 250px;
-    font-family: var(--text-default);
-
-}
-
-.contact button {
-    margin: 0 auto;
-    border-style: none;
-    border-radius: 40px;
-    margin-bottom: 30px;
-    font-family: var(--text-default);
-    width: 10%;
-    height: 30px;
-    font-size: 90%;
-    background: #76d985;
-    color: white;
-    cursor: pointer;
-    transition: all 1s;
-}
-
-.contact button:hover {
-    background: #549a5f;
-
-}
-
-
 footer a {
     margin: 20px;
     color: #fff;
@@ -319,17 +139,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 460px) {
-    .title {
-        font-size: 12px;
-    }
-
-    header h1 {
-        font-size: 20px;
-    }
-
-    .information {
-        font-size: 12px;
-    }
     .community-info img {
         width: 50%;
         height: 500px;
@@ -349,22 +158,7 @@ footer a:hover {
     .projects .redirect {
         overflow: hidden;
     }
-
-    .contact input {
-        width: 50%;
-    }
-
-    .contact button {
-        width: 20%;
-        height: 30px;
-    
-    }
-
-    .contact textarea {
-        width: 80%;
-    }
-    
-    
+     
 }
 
 @media screen and (min-width: 460px) {
