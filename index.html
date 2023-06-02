@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="shortcut icon " href="/images/logo.jpg">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@300;500&family=Satisfy&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="Iván San Martín">
     <meta property="og:description" content="Mi nombre es Iván y soy estudiante de programación, actualmente me encuentro desarrollando mi página web en la cual voy aplicando conocimiento de lo aprendido.">
@@ -22,7 +26,23 @@
     
     
     <header>
-        <h1>Iván San Martín</h1>
+        <div class="logo">
+            <h1>Iván San Martín</h1>
+        </div>
+        <div class="nav">
+            <ul id="navegator">
+                <div>
+                    <i class="fa-solid fa-xmark" id="closeMenu"></i>
+                </div>
+                <li><a href="">Sobre mí</a></li>
+                <li><a href="">Proyectos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+
+        <i class="fa-solid fa-bars" id="menu"></i>
+       
+       
     </header>
 
 
@@ -74,6 +94,7 @@
 
     
 
+    <script src="js/app.js"></script>
 
 </body>
 </html>
