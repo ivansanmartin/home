@@ -8,7 +8,9 @@ menuButton.addEventListener("click", () => {
 
 })
 
-closeButton.addEventListener("click", () => {
+navegator.addEventListener("click", () => {
     navegator.classList.remove("active")
 })
+
+
     
