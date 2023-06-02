@@ -10,4 +10,4 @@
   </ul>
 
 <h1>Ver página</h1>
-      https://ivansanmartin.github.io/home/
+      https://ivansanmartin.github.io/
