@@ -209,7 +209,7 @@ footer {
     }
 
     footer {
-        height: 210vh;
+        height: 230vh;
         align-items: center;
         justify-content: space-around;
 
@@ -308,7 +308,7 @@ footer {
 
     footer .sociales {
         display: flex;
-        margin-top: 40vh;
+        margin-top: 56vh;
         flex-direction: column;
     }
 
