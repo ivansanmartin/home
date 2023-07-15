@@ -208,6 +208,30 @@ footer {
         font-size: 100%;
     }
 
+    .content-layout .nosotros .more button {
+        border-style: none;
+        margin-top: 20px;
+        width: 20vh;
+        height: 7vh;
+        background-color: #fdb913;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+    }
+
+    .content-layout .nosotros .more a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    
+
+    .content-layout .nosotros .more button:hover {
+        background-color: #fdbb13a1;
+    }
+
     footer {
         height: 240vh;
         align-items: center;
@@ -268,12 +292,12 @@ footer {
     footer .contact .form-contact form div:last-child button {
         width: 18vh;
         height: 5vh;
-        color: #fff;
         background-color: #fdb913;
         border-style: none;
         border-radius: 30px;
         cursor: pointer;
         transition: all 0.4s;
+        font-weight: bold;
 
         
     }
