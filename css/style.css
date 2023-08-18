@@ -100,8 +100,9 @@ header .nav li a:hover {
     align-items: center;
     margin: 6px;
     width: 20%;
-    background: #191E29;
+    background: #485963;
     border: 1px;
+    height: auto;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.5s;
@@ -119,6 +120,9 @@ header .nav li a:hover {
 }
 
 .projects .card .cuerpo-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
     color: var(--color-texto);
     flex-direction: column;
     gap: 10px;
