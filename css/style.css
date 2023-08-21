@@ -100,7 +100,7 @@ header .nav li a:hover {
     align-items: center;
     margin: 6px;
     width: 20%;
-    background: #485963;
+    background: #48596347;
     border: 1px;
     height: auto;
     border-radius: 10px;
@@ -110,6 +110,8 @@ header .nav li a:hover {
 
 .projects .card:hover {
     transform: scale(1.02);
+    background: #485963;
+
 }
 
 .projects .card img {
