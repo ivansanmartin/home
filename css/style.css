@@ -11,7 +11,7 @@
     --color-background: #dbd4d4;
     --color-texto: #c9c9c9;
     --text-default: 'Roboto', sans-serif;;
-    --title-color: #1771d2;
+    --title-color: rgba(1, 195, 140, 0.638);
 }
 
 /* GENERALES */
@@ -93,7 +93,7 @@ header .logo h1 {
 
 .principal .presentation .title {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
     color: var(--title-color);
 }
@@ -128,7 +128,7 @@ header .logo h1 {
 
 
 .recent-project .content .title {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--title-color);
 
 }
