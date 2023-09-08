@@ -72,6 +72,7 @@ header .logo h1 {
 .principal {
     display: flex;
     color: white;
+    align-items: center;
     width: 100%;
     height: auto;
     margin-bottom: 20vh;
@@ -100,7 +101,7 @@ header .logo h1 {
 .principal .recent-project {
     display: flex;
     margin: 40px;
-    width: 100%;
+    width: 50%;
     height: 30vh;
 }
 
