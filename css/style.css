@@ -1,3 +1,7 @@
+/* IMPORTS  */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
 /* VARIABLES  */
 
 :root {
@@ -6,7 +10,8 @@
     --color-sencundario: #9addd1;
     --color-background: #dbd4d4;
     --color-texto: #c9c9c9;
-    --text-default: 'Nunito', sans-serif;
+    --text-default: 'Roboto', sans-serif;;
+    --title-color: #1771d2;
 }
 
 /* GENERALES */
@@ -39,7 +44,7 @@ header {
     -moz-box-shadow: 0px -10px 223px -26px rgba(1,195,141,0.29);
     box-shadow: 0px -10px 223px -26px rgba(1,195,141,0.29);    
     letter-spacing: 4px;
-    z-index: 1; 
+    z-index: 100; 
     
 }
 header i {
@@ -54,36 +59,88 @@ header .logo h1 {
     cursor: pointer;
 }
 
-header .nav {
-    display: flex;
-    align-items: center;
-}
-
-header .nav ul  {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    gap: 50px;
-}
-
-header .nav ul li a {
-    text-decoration: none;
-    color: var(--color-texto);
-    transition: all 1s;  
-    border-bottom: 1px solid transparent;  
-}
-
-header .nav li a:hover {
-    border-bottom: 1px solid;  
-
-}
 
 .sections {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+
+    height: auto;
 }
+
+.principal {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20vh;
+   
+}
+
+.principal .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 40px;
+    height: auto;
+
+
+}
+
+
+.principal .presentation .title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+
+.principal .recent-project {
+    display: flex;
+    margin: 40px;
+    width: 100%;
+    height: 30vh;
+}
+
+.principal .recent-project .content {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+.principal .projects {
+    width: 100%;
+    height: 100%;
+}
+
+.principal .recent-project .content .projects .card {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 70%;
+    padding: 20px;
+    color: var(--color-texto);
+    background-color: #191E29;
+}
+
+
+.recent-project .content .title {
+    font-weight: 500;
+    color: var(--title-color);
+
+}
+
+
+.principal .presentation .body {
+    font-size: 20px;
+    width: 75%;
+    text-align: center;
+    margin: 0;
+    font-weight: 200
+}
+
 
 .projects {
     display: flex;
@@ -116,7 +173,7 @@ header .nav li a:hover {
 
 .projects .card img {
     width: 100%;
-    height: 50%;
+    height: 45%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -137,18 +194,6 @@ header .nav li a:hover {
     text-align: justify;
 }
 
-
-.principal {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100;
-    color: var(--color-texto);
-}
-
-.principal h1 {
-    text-align: center;
-    color: var(--color-texto);
-}
 
 .community {
     display: flex;
@@ -205,7 +250,7 @@ header .nav li a:hover {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     background: #191E29;
     -webkit-box-shadow: 0px -10px 223px -26px rgba(1,195,141,0.29);
@@ -221,8 +266,9 @@ footer {
 
 footer
 .derechos {
+    display: flex;
+    align-items: center;
     height: 100px;
-    padding-top: 50px;
 }
 
 footer
@@ -240,13 +286,37 @@ footer a {
 footer a:hover {
     color: #f6cdcd;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1000px) {
     .sections .projects {
         flex-direction: column;
         align-items: center;
+        
+    }
+
+    .sections .projects .card {
+        width: 80%
+    }
+
+    .sections .principal {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sections .principal .presentation {
+        width: 100%;
+    }
+
+    .sections .principal .recent-project {
+        width: 100%;
+    }
+
+    .principal .recent-project .content .projects .card {
+        width: 70%
     }
 }
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 600px ) {
     header {
         top: 0;
     }
@@ -255,7 +325,7 @@ footer a:hover {
         visibility: visible;
     }
 
-    .projects
+    .sections .projects
     .card  {
         width: 90%;
     }
