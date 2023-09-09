@@ -78,6 +78,7 @@ let projects = new Project("content", [
         description:
             "Aplicación realizada para ser usada en gimnasios y tener mayor control de rutinas y clientes. Despliegue realizado en Fly.io.",
         technologies: ["js", "express", "css", "html", "bootstrap", "ejs"],
+        created_at: "05/06/2023",
         last: false,
     },
 
@@ -88,16 +89,19 @@ let projects = new Project("content", [
             "API REST diseñada para desarrolladores juniors que deseen practicar la integración de API's en sus aplicaciones, tanto frontend y backend.",
         technologies: ["js", "express"],
         url: "https://ivansanmartin.vercel.app/project",
+        created_at: "21/08/2023",
         last: true,
     },
 ]);
 
 const lastProjectContent = document.getElementById("project");
+const lastProjectDate = document.getElementById("date_created");
 const allProjects = document.getElementById("projects");
 const projectButtonRedirect = document.getElementById("view-lastproject");
 const lastProject = projects.getLastProject()[0];
 
 lastProjectContent.innerHTML = lastProject.name;
+lastProjectDate.innerHTML = `Creado el ${lastProject.created_at}`
 projectButtonRedirect.href = lastProject.url;
 
 projects.obj.forEach((value) => {
