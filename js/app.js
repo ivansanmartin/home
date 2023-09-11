@@ -57,6 +57,31 @@ class Project {
             
             `
         }
+
+        this.obj.forEach((value) => {
+    
+            let techs = this.getTechnologiesProject(value.technologies)
+            
+            this.container.innerHTML += `
+            <div class="card card-1">
+            <img src="${value.img}" alt="">
+        
+                <div class="cuerpo-card text-wrap text-break">
+                    <h2>${value.name}</h2>
+                    <p>${value.description}</p>
+                    
+                    <div class="">
+                        
+                        ${techs.join("")}
+                    </div>
+                    <button type="button" class="btn btn-info w-50" onclick="window.open('${value.url}', '_blank')">Ver</button>
+        
+                </div>
+            </div>
+        
+        
+        `;
+        });
     }
 
     getLastProject() {
@@ -71,13 +96,14 @@ class Project {
     }
 }
 
-let projects = new Project("content", [
+let projects = new Project("projects", [
     {
         name: "Sport Gym App",
         img: "/images/sportgym.png",
         description:
             "Aplicación realizada para ser usada en gimnasios y tener mayor control de rutinas y clientes. Despliegue realizado en Fly.io.",
         technologies: ["js", "express", "css", "html", "bootstrap", "ejs"],
+        url: "https://github.com/ivansanmartin/sport-gym-app",
         created_at: "05/06/2023",
         last: false,
     },
@@ -96,7 +122,6 @@ let projects = new Project("content", [
 
 const lastProjectContent = document.getElementById("project");
 const lastProjectDate = document.getElementById("date_created");
-const allProjects = document.getElementById("projects");
 const projectButtonRedirect = document.getElementById("view-lastproject");
 const lastProject = projects.getLastProject()[0];
 
@@ -104,30 +129,7 @@ lastProjectContent.innerHTML = lastProject.name;
 lastProjectDate.innerHTML = `Creado el ${lastProject.created_at}`
 projectButtonRedirect.href = lastProject.url;
 
-projects.obj.forEach((value) => {
-    
-    let techs = projects.getTechnologiesProject(value.technologies)
-    
-    allProjects.innerHTML += `
-    <div class="card card-1">
-    <img src="${value.img}" alt="">
 
-        <div class="cuerpo-card text-wrap text-break">
-            <h2>${value.name}</h2>
-            <p>${value.description}</p>
-            
-            <div class="">
-                
-                ${techs.join("")}
-            </div>
-            <button type="button" class="btn btn-info w-50" onclick="window.open('https://github.com/ivansanmartin/sport-gym-app', '_blank')">Ver</button>
-
-        </div>
-    </div>
-
-
-`;
-});
 
 
 
