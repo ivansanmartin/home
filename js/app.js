@@ -117,7 +117,7 @@ class Project {
 let projects = new Project("projects", [
     {
         name: "Sport Gym App",
-        img: "/images/sportgym.png",
+        img: "https://res.cloudinary.com/dxupqwg5l/image/upload/f_auto,q_auto/v1/ivansanmartin.github.io/nl1aqvmir1m0mkm9aicy",
         description:
             "Aplicación realizada para ser usada en gimnasios y tener mayor control de rutinas y clientes. Despliegue realizado en Fly.io.",
         technologies: ["nodejs", "express", "js", "css", "html", "bootstrap", "ejs"],
@@ -128,7 +128,7 @@ let projects = new Project("projects", [
 
     {
         name: "Binary Decimal API",
-        img: "/images/binarydecimalapi.png",
+        img: "https://res.cloudinary.com/dxupqwg5l/image/upload/f_auto,q_auto/v1/ivansanmartin.github.io/c8oc7i5r8tehx0gyfbcv",
         description:
             "API REST diseñada para desarrolladores juniors que deseen practicar la integración de API's en sus aplicaciones, tanto frontend y backend.",
         technologies: ["nodejs", "express"],
@@ -138,7 +138,7 @@ let projects = new Project("projects", [
     },
     {
         name: "Binary Decimal App",
-        img: "/images/binarydecimalapp.png",
+        img: "https://res.cloudinary.com/dxupqwg5l/image/upload/f_auto,q_auto/v1/ivansanmartin.github.io/vdfuy0ggdatdk04xm0xi",
         description:
             "Aplicacion MERN stack consumiendo mi API Rest de \"Binary Decimal API\". Mi primera aplicación web utilizando Auth0.",
         technologies: ["mongodb", "express", "react", "nodejs", "js", "html", "css", "bootstrap"],
